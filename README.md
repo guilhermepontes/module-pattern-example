@@ -3,13 +3,28 @@ An bootstrap that uses the Module design pattern.
 
 ## Installation
 
-TODO: Describe the installation process
-
-## Usage
-
+Clone into your project.
 ```shell
 git clone git@github.com:guilhermepontes/module-pattern-bootstrap.git
 ```
+
+## Usage
+```javascript
+var init =  {
+	ready : function() {
+		sampleApplication.init();
+	},
+
+	load : function() {
+		sampleApplication.load();
+	}
+};
+
+
+$( document ).ready( init.ready )
+$( window ).load( init.load );
+```
+
 
 
 ## Contributing
