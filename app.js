@@ -9,7 +9,7 @@
 
 var sampleApplication;
 
-sampleApplication = (function(d, w, $){
+sampleApplication = (function(d, w, $, u){
 	"use strict";
 
 	var app, config;
@@ -75,18 +75,6 @@ sampleApplication = (function(d, w, $){
 })(document, window, window.jQuery);
 
 
-
-var init =  {
-	ready : function() {
-		sampleApplication.init();
-	},
-
-	load : function() {
-		sampleApplication.load();
-	}
-};
-
-
-$( document ).ready( init.ready )
-$( window ).load( init.load );
+$( document ).ready( sampleApplication.init )
+$( window ).load( sampleApplication.load );
 
