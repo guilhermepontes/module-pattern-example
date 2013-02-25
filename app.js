@@ -9,7 +9,7 @@
 
 var sampleApplication;
 
-sampleApplication = (function(d, w, $, u){
+sampleApplication = window.sampleApplication || (function(d, w, $, u){
 	"use strict";
 
 	var app, config;
@@ -18,7 +18,7 @@ sampleApplication = (function(d, w, $, u){
 	//private content
 	config = {
 		div : {
-			background: "red";
+			background: "red"
 		}
 	};
 
@@ -74,6 +74,8 @@ sampleApplication = (function(d, w, $, u){
 
 })(document, window, window.jQuery);
 
+//caching the sample app
+window.sampleApplication = sampleApplication;
 
 $( document ).ready( sampleApplication.init )
 $( window ).load( sampleApplication.load );
