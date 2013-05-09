@@ -24,24 +24,24 @@ sampleApplication = window.sampleApplication || (function(d, w, $, u){
 
 	app = {
 		init : function() {
-			this.log("Init");
+			this.log("Initializing project");
 			this._cache();
 			this._bind();
 		},
 
 		load: function() {
-			this.log("Loading all");
+			this.log("Load event triggered");
 			this.loadMe();
 		},
 
 		_cache : function() {
-			this.log("Cache elements");
+			this.log("Caching elements");
 			this.$anchorPrevent   = $( "a[href='#']" );
 			this.$myDiv           = $( ".myDiv" );
 		},
 
 		_bind : function() {
-			this.log("Bind functions");
+			this.log("Binding functions");
 			this.$anchorPrevent.on( 'click', this.prevent );
 			this.$myDiv.on( 'click', this.changeBackground );
 		},
