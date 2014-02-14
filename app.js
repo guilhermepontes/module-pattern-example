@@ -100,7 +100,7 @@ var MyApp = window.MyApp || (function(document, window){
 	 * @type {Object} 
 	 * @default {Object} 
 	 */
-	var app = {
+	app = {
 
 		/**
 		 * The init method, is the function that initialize the project,  
