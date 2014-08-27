@@ -1,0 +1,36 @@
+{
+  "name": "module-pattern-bootstrap",
+  "version": "3.0.0",
+  "description": "An example of module pattern in JavaScript",
+  "main": "app.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guilhermepontes/module-pattern-bootstrap.git"
+  },
+  "keywords": [
+    "module",
+    "pattern",
+    "module",
+    "javascript",
+    "module",
+    "pattern",
+    "design",
+    "patterns"
+  ],
+  "author": "Guilherme Pontes",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/guilhermepontes/module-pattern-bootstrap/issues"
+  },
+  "homepage": "https://github.com/guilhermepontes/module-pattern-bootstrap",
+  "devDependencies": {
+    "gulp": "~3.8.7",
+    "karma": "~0.12.22",
+    "gulp-karma": "0.0.4",
+    "karma-jasmine": "~0.1.5",
+    "karma-phantomjs-launcher": "~0.1.4"
+  }
+}
