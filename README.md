@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/guilhermepontes/module-pattern-bootstrap.svg?branch=master)](https://travis-ci.org/guilhermepontes/module-pattern-bootstrap)
+
 # Module Pattern Bootstrap
 An bootstrap that uses the Module design pattern.
 
