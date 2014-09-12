@@ -18,7 +18,7 @@
     "patterns"
   ],
   "author": "Guilherme Pontes",
-  "license": "BSD-2-Clause",
+  "license": "ApacheV2",
   "bugs": {
     "url": "https://github.com/guilhermepontes/module-pattern-bootstrap/issues"
   },
