@@ -1,5 +1,5 @@
-var gulp   = require('gulp'),
-    karma  = require('gulp-karma');
+var gulp  = require('gulp');
+var karma = require('gulp-karma');
 
 var GulpApp = {
   config: {
