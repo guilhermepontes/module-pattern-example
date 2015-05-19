@@ -148,7 +148,8 @@ var MyApp = window.MyApp || (function(document, window){
   return app;
 
 })(document, window);
-
+//We also could auto-initialize the app this way, adding a `.init()`, like this:
+//})(document, window).init();
 
 // another self invokated function to executes the app.
 (function(){
