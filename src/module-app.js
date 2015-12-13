@@ -136,7 +136,7 @@ var MyApp = window.MyApp || (function(document, window){
      * @return {Undefined}
     */
     _bind: function() {
-      this.body.addEventListener('click', _private.makeBackgroundRed , false);
+      this.body.addEventListener('click', __private.makeBackgroundRed , false);
     }
   };
 
