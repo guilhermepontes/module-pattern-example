@@ -29,12 +29,11 @@ describe("Scope Tests", function() {
 
   describe("Private methods", function(){
   	it("MyApp.app must PRIVATE", function() {
-	    expect(MyApp.app).toBeUndefined();
+	    expect(MyApp.application).toBeUndefined();
 	  });
 
 	  it("MyApp._private must be PRIVATE", function() {
 	    expect(MyApp._private).toBeUndefined();
 	  });
   });
-
 });
