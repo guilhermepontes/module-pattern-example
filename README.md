@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/guilhermepontes/module-pattern-bootstrap.svg?branch=master)](https://travis-ci.org/guilhermepontes/module-pattern-bootstrap)
 
 # Module Pattern Bootstrap
-An bootstrap that uses the  [Module Design Pattern](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript/ "Module Design Pattern").
+A simple boilerplate that uses [Module Design Pattern](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript/ "Module Design Pattern").
 
 ## Installation
 
