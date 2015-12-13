@@ -2,23 +2,21 @@
  * ModulePattern Bootstrap
  *
  * Created      : 21/01/2013
- * Modified     : 27/08/2014
- * Version      : 3.0
+ * Modified     : 13/12/2015
+ * Version      : 0.0.4
  * UI Developer : Guilherme Pontes
  * Notes        : Copy and reproduce as much as you want.
 ---------------------------------------------------------------------------*/
 
 /**
 * This is MyApp, it makes something awesome.
-* It's an self invokated function that runs automatically/immediately.
+* It's a self invokated function that runs automatically/immediately.
 *
 * @class MyApp
 * @constructor
 */
 var MyApp = window.MyApp || (function(document, window){
   "use strict";
-
-  var app, _private;
 
   /**
    * The _private variable encapsulate all PRIVATE functions
@@ -28,7 +26,7 @@ var MyApp = window.MyApp || (function(document, window){
    * @type {Object}
    * @default {Object}
    */
-  _private = {
+  var __private = {
     /**
      * The _config variable sets all properties that will be
      * handled by the app.
@@ -58,7 +56,7 @@ var MyApp = window.MyApp || (function(document, window){
     },
 
     /**
-     * Makes the body element from {MyApp.body} the color setted,
+     * Makes the body element from `MyApp.body` the color setted,
      * if not setted it will be the default color
      * from {_private._config.background.color}
      *
@@ -67,45 +65,45 @@ var MyApp = window.MyApp || (function(document, window){
      * @return {Undefined}
      */
     setBGColor: function(color) {
-      app.body.style.background = color || this._config.background.color;
+      application.body.style.background = color || this._config.background.color;
     },
 
     /**
-     * Makes body blue from {MyApp.init} method.
+     * Makes body blue from `MyApp.init` method.
      *
      * @method makeBackgroundBlue
      * @return {Undefined}
      */
     makeBackgroundBlue: function() {
-      _private.setBGColor("blue");
+      __private.setBGColor("blue");
     },
 
     /**
-     * Makes body red from click event at {MyApp.bind} from
+     * Makes body red from click event at `MyApp.bind` from
      * {MyApp.makeBodyRed}.
      *
      * @method makeBackgroundRed
      * @return {Undefined}
      */
     makeBackgroundRed: function() {
-      _private.setBGColor("red");
+      __private.setBGColor("red");
     }
   };
 
   /**
-   * The _app variable encapsulate all PUBLIC functions
+   * Encapsulates all PUBLIC functions
    * and properties.
    *
    * @property _private
    * @type {Object}
    * @default {Object}
    */
-  app = {
+  var application = {
 
     /**
-     * The init method, is the function that initialize the project,
-     * by caching variables and binding objects and can initialize
-     * other methods too.
+     * Initialize the project by caching variables 
+     * and binding the objects. It can also initialize
+     * other methods.
      *
      * @method init
      * @return {Undefined}
@@ -114,15 +112,13 @@ var MyApp = window.MyApp || (function(document, window){
       this._cache();
       this._bind();
 
-      //the background must be blue first..
       _private.makeBackgroundBlue();
     },
 
     /**
-     * The _cache method creates public properties that will be
-     * handled by other methods. Caching elements to not have to be
-     * called every single time.
-     *
+     * Creates public properties that will be
+     * handled by other methods. Caching elements is a 
+     * good practice.
      *
      * @method _cache
      * @return {Undefined}
@@ -132,7 +128,7 @@ var MyApp = window.MyApp || (function(document, window){
     },
 
     /**
-     * The _bind method bind all cached dom elements from {MyApp._cache}.
+     * Bind all cached dom elements from `MyApp._cache`.
      * It sets methods to events made by the DOM.
      *
      *
@@ -145,13 +141,11 @@ var MyApp = window.MyApp || (function(document, window){
   };
 
   // make app visible by the MyApp;
-  return app;
+  return application;
 
 })(document, window);
-//We also could auto-initialize the app this way, adding a `.init()`, like this:
+//We also can auto-initialize the app by adding a `.init()`, like this:
 //})(document, window).init();
 
-// another self invokated function to executes the app.
-(function(){
-  MyApp.init();
-})();
+// Initialize app
+MyApp.init();
