@@ -19,10 +19,10 @@ var MyApp = window.MyApp || (function(document, window){
   "use strict";
 
   /**
-   * The _private variable encapsulate all PRIVATE functions
+   * The __private variable encapsulate all PRIVATE functions
    * and properties.
    *
-   * @property _private
+   * @property __private
    * @type {Object}
    * @default {Object}
    */
@@ -31,7 +31,7 @@ var MyApp = window.MyApp || (function(document, window){
      * The _config variable sets all properties that will be
      * handled by the app.
      *
-     * @property _private
+     * @property __private
      * @type {Object}
      * @default {Object}
      */
@@ -58,7 +58,7 @@ var MyApp = window.MyApp || (function(document, window){
     /**
      * Makes the body element from `MyApp.body` the color setted,
      * if not setted it will be the default color
-     * from {_private._config.background.color}
+     * from `__private._config.background.color`
      *
      * @method setBGColor
      * @param {String} color A color to be an background color from body.
@@ -94,7 +94,7 @@ var MyApp = window.MyApp || (function(document, window){
    * Encapsulates all PUBLIC functions
    * and properties.
    *
-   * @property _private
+   * @property application
    * @type {Object}
    * @default {Object}
    */
@@ -112,7 +112,7 @@ var MyApp = window.MyApp || (function(document, window){
       this._cache();
       this._bind();
 
-      _private.makeBackgroundBlue();
+      __private.makeBackgroundBlue();
     },
 
     /**
