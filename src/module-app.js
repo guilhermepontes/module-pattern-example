@@ -2,8 +2,8 @@
  * ModulePattern Bootstrap
  *
  * Created      : 21/01/2013
- * Modified     : 13/12/2015
- * Version      : 0.0.4
+ * Modified     : 19/06/2017
+ * Version      : 0.0.5
  * UI Developer : Guilherme Pontes
  * Notes        : Copy and reproduce as much as you want.
 ---------------------------------------------------------------------------*/
@@ -56,9 +56,9 @@ var MyApp = window.MyApp || (function(document, window){
     },
 
     /**
-     * Makes the body element from `MyApp.body` the color setted,
-     * if not setted it will be the default color
-     * from `__private._config.background.color`
+     * Set the `body` property (check the `MyApp.cache` method)
+     * a color of your choice, if not it will fallback to
+     * `__private._config.background.color`
      *
      * @method setBGColor
      * @param {String} color A color to be an background color from body.
@@ -80,7 +80,7 @@ var MyApp = window.MyApp || (function(document, window){
 
     /**
      * Makes body red from click event at `MyApp.bind` from
-     * {MyApp.makeBodyRed}.
+     * `MyApp.makeBodyRed`.
      *
      * @method makeBackgroundRed
      * @return {Undefined}
@@ -125,6 +125,8 @@ var MyApp = window.MyApp || (function(document, window){
     */
     _cache: function(){
       this.body = document.body;
+      this.button = document.querySelector('.btn')
+      this.select = document.querySelector('.slct')
     },
 
     /**
