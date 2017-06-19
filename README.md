@@ -7,7 +7,7 @@ A simple boilerplate that uses [Module Design Pattern](http://addyosmani.com/res
 
 Clone into your project.
 ```shell
-git clone git@github.com:guilhermepontes/module-pattern-bootstrap.git
+git clone git@github.com:guilhermepontes/module-pattern-example.git
 ```
 
 ## Usage
